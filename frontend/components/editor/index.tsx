@@ -462,7 +462,6 @@ export default function CodeEditor({
         setActiveFileContent(response);
       });
     }
-
     setEditorLanguage(processFileType(tab.name));
     setActiveFileId(tab.id);
   }, [activeFileId, tabs, debouncedGetFile]);
